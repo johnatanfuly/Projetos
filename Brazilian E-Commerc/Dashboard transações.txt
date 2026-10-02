@@ -1,2 +1,0 @@
-# o que eu preciso em uma dashboard inicialmente?
-# uma banco de dados. Onde eu posso obter? Kaggle
