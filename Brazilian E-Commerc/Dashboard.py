@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # O que eu quero extrair do dataset:olist_customers_dataset.csv = customer_city + customer_state
 #                                   olist_order_items_dataset.csv = "price" +"freight_value"
 #                                   olist_payments_dataset.csv = "payment_type" + "payment_value"
@@ -254,3 +255,19 @@ else:
     st.error(f"Erro: As colunas 'payment_type' ou 'payment_value' não foram encontradas. Colunas disponíveis na tabela: {list(df_combinado.columns)}")
 
 
+=======
+import pandas as pd
+import plotly.express as px
+
+# 1. Carregar a base de dados
+def carregar_dados():
+    # Adicionamos o encoding="latin1" para aceitar os acentos e "ç" do português
+    return pd.read_csv("banco_de_dados.csv", encoding="latin1")
+
+# Executa a função para carregar o DataFrame
+df1 = carregar_dados()
+
+# 2. Exibir o DataFrame no terminal
+print("📂 Visualização da Base de Dados (df1):")
+print(df1.head()) 
+>>>>>>> 037058d (Sudoku)
